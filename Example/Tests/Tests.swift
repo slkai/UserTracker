@@ -1,6 +1,6 @@
 import UIKit
 import XCTest
-import UserTracker
+//import UserTracker
 
 class Tests: XCTestCase {
     

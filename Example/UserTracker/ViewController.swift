@@ -7,18 +7,33 @@
 //
 
 import UIKit
+import UserTracker
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    
+    @objc dynamic func clickButton(text: String) {
+        // do sth
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        clickButton(text: "arguments")
     }
-
 }
+
+extension ViewController: Trackable {
+    var pageName: String {
+        return "首页"
+    }
+    
+    var pageParams: String {
+        return "pageParmas"
+    }
+    var methods: [(Selector,TrackBlock)] {
+        return [(#selector(clickButton), { args in
+            UserTracker.action(name: "点击XX按钮", params: ["text": (args.first as? String) ?? ""], in: self)
+        })]
+    }
+}
+
+
 

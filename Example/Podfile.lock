@@ -1,0 +1,19 @@
+PODS:
+  - Aspects (1.4.1)
+  - UserTracker (0.1.0):
+    - Aspects (~> 1.4.1)
+
+DEPENDENCIES:
+  - UserTracker (from `../`)
+
+EXTERNAL SOURCES:
+  UserTracker:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
+  UserTracker: e736854e550e0416fd92d2c1ed5130b76fbe4628
+
+PODFILE CHECKSUM: f3e192d1f696e6b4164f939e3fe101df89197dfd
+
+COCOAPODS: 1.4.0.beta.1

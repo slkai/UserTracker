@@ -9,24 +9,16 @@
 Pod::Spec.new do |s|
   s.name             = 'UserTracker'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of UserTracker.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.summary          = 'A demo for user track function.'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+    将统计打点和业务分离，降低耦合，方便管理统计点。进入页面后，使用Aspects Hook需要打点的方法；离开页面后，解除Hook。
                        DESC
 
   s.homepage         = 'https://github.com/MooYoo/UserTracker'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'MooYoo' => 'alandeng@meijiabang.cn' }
+  s.author           = { 'alan' => 'alandeng@meijiabang.cn' }
   s.source           = { :git => 'https://github.com/MooYoo/UserTracker.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
@@ -36,7 +28,8 @@ TODO: Add long description of the pod here.
   #   'UserTracker' => ['UserTracker/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+#s.module_name = 'UserTracker'
+  #s.public_header_files = 'Pod/Classes/**/*.h'
+  s.frameworks = 'UIKit', 'MapKit'
+  s.dependency 'Aspects', '~> 1.4.1'
 end
