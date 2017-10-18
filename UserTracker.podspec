@@ -15,10 +15,10 @@ Pod::Spec.new do |s|
     将统计打点和业务分离，降低耦合，方便管理统计点。进入页面后，使用Aspects Hook需要打点的方法；离开页面后，解除Hook。
                        DESC
 
-  s.homepage         = 'https://github.com/MooYoo/UserTracker'
+  s.homepage         = 'https://github.com/slkai/UserTracker'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'alan' => 'alandeng@meijiabang.cn' }
-  s.source           = { :git => 'https://github.com/MooYoo/UserTracker.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/slkai/UserTracker.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
 
