@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.author           = { 'alan' => 'alandeng@meijiabang.cn' }
   s.source           = { :git => 'https://github.com/slkai/UserTracker.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'UserTracker/Classes/**/*'
   

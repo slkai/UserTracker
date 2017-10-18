@@ -1,0 +1,31 @@
+{
+  "name": "UserTracker",
+  "version": "0.1.0",
+  "summary": "A demo for user track function.",
+  "description": "将统计打点和业务分离，降低耦合，方便管理统计点。进入页面后，使用Aspects Hook需要打点的方法；离开页面后，解除Hook。",
+  "homepage": "https://github.com/slkai/UserTracker",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "alan": "alandeng@meijiabang.cn"
+  },
+  "source": {
+    "git": "https://github.com/slkai/UserTracker.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "UserTracker/Classes/**/*",
+  "frameworks": [
+    "UIKit",
+    "MapKit"
+  ],
+  "dependencies": {
+    "Aspects": [
+      "~> 1.4.1"
+    ]
+  }
+}
