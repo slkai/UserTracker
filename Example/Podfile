@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'UserTracker_Example' do
+  pod 'UserTracker', :path => '../'
+
+  target 'UserTracker_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
